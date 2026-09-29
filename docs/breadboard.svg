@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 410" role="img" aria-label="Half-size breadboard. TP4056 OUT+ and OUT- to the top plus and minus rails. AM312 VCC to plus rail, GND to minus rail, OUT to c3. D2 1N4148 from d3 to d7, stripe at d7. R2 1k from c7 to c11. C1 100 microfarad: plus leg a11, minus leg in the minus rail. R3 1 megohm from b11 to the minus rail. IRLZ44N gate e11, drain e12, source e13, printed side toward you. Jumper c13 to minus rail. LED cathode d12, anode d15. R1 68 ohm from c15 to c19. Jumper a19 to plus rail.">
+<style>
+svg { color: #17191a; font-family: "IBM Plex Mono", Menlo, Consolas, monospace; }
+text { fill: currentColor; font-size: 12px; }
+.box { fill: #f4f5f2; stroke: currentColor; stroke-width: 1.5; }
+.t-name { font-family: Archivo, "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 15px; }
+.t-mut { fill: #5b625e; font-size: 11px; }
+.t-pos { fill: #d0463a; }
+.bb-board { fill: #eeede6; stroke: #cfccc0; stroke-width: 1.5; }
+.bb-trench { fill: #dcdad1; }
+.bb-red { stroke: #d0463a; stroke-width: 2; }
+.bb-blue { stroke: #3a67c9; stroke-width: 2; }
+.bb-lbl { font-size: 15px; font-weight: 700; }
+.bb-neg { fill: #3a67c9; }
+.bb-hole { fill: #a8a699; }
+.bb-idx { fill: #7d7b71; font-size: 10px; }
+.bb-wire { fill: none; stroke-width: 5; stroke-linecap: round; }
+.bb-w-pos { stroke: #d8352a; }
+.bb-w-neg { stroke: #24314f; }
+.bb-w-sig { stroke: #0e8a7e; }
+.bb-pin { fill: #3a3a36; }
+.bb-leg { stroke: #8d8d86; stroke-width: 1.8; fill: none; }
+.bb-res { fill: #e6cf9f; stroke: #9a8358; stroke-width: 1; }
+.bb-q { fill: #26262a; }
+.bb-qt { fill: #f0f0ea; font-size: 8px; font-weight: 500; }
+.bb-led { fill: #fbfbf2; stroke: #b9b8ad; stroke-width: 1.5; }
+.bb-dome { fill: #f6f6f1; stroke: #b9b8ad; stroke-width: 1.5; }
+.bb-lead { stroke: #8a887e; stroke-width: 1; stroke-dasharray: 3 3; }
+.bb-lead-out { stroke: #5b625e; stroke-width: 1; stroke-dasharray: 3 3; }
+.bb-cap { fill: #22231f; font-size: 12px; font-weight: 500; }
+.bb-capm { fill: #6c6a61; font-size: 10.5px; }
+</style>
+<rect x="0" y="0" width="1120" height="410" fill="#ffffff"/>
+
+<rect class="bb-board" x="262" y="34" width="620" height="372" rx="8"/>
+<rect class="bb-trench" x="270" y="214" width="604" height="12" rx="2"/>
+<line class="bb-red" x1="284" y1="50" x2="876" y2="50"/>
+<line class="bb-blue" x1="284" y1="90" x2="876" y2="90"/>
+<line class="bb-blue" x1="284" y1="350" x2="876" y2="350"/>
+<line class="bb-red" x1="284" y1="390" x2="876" y2="390"/>
+<text class="bb-lbl t-pos" x="274" y="64" text-anchor="middle">+</text>
+<text class="bb-lbl bb-neg" x="274" y="84" text-anchor="middle">−</text>
+<text class="bb-lbl bb-neg" x="274" y="364" text-anchor="middle">−</text>
+<text class="bb-lbl t-pos" x="274" y="384" text-anchor="middle">+</text>
+<path class="bb-hole" d="M287,117h6v6h-6zM287,137h6v6h-6zM287,157h6v6h-6zM287,177h6v6h-6zM287,197h6v6h-6zM287,237h6v6h-6zM287,257h6v6h-6zM287,277h6v6h-6zM287,297h6v6h-6zM287,317h6v6h-6zM287,57h6v6h-6zM287,77h6v6h-6zM287,357h6v6h-6zM287,377h6v6h-6zM307,117h6v6h-6zM307,137h6v6h-6zM307,157h6v6h-6zM307,177h6v6h-6zM307,197h6v6h-6zM307,237h6v6h-6zM307,257h6v6h-6zM307,277h6v6h-6zM307,297h6v6h-6zM307,317h6v6h-6zM307,57h6v6h-6zM307,77h6v6h-6zM307,357h6v6h-6zM307,377h6v6h-6zM327,117h6v6h-6zM327,137h6v6h-6zM327,157h6v6h-6zM327,177h6v6h-6zM327,197h6v6h-6zM327,237h6v6h-6zM327,257h6v6h-6zM327,277h6v6h-6zM327,297h6v6h-6zM327,317h6v6h-6zM327,57h6v6h-6zM327,77h6v6h-6zM327,357h6v6h-6zM327,377h6v6h-6zM347,117h6v6h-6zM347,137h6v6h-6zM347,157h6v6h-6zM347,177h6v6h-6zM347,197h6v6h-6zM347,237h6v6h-6zM347,257h6v6h-6zM347,277h6v6h-6zM347,297h6v6h-6zM347,317h6v6h-6zM347,57h6v6h-6zM347,77h6v6h-6zM347,357h6v6h-6zM347,377h6v6h-6zM367,117h6v6h-6zM367,137h6v6h-6zM367,157h6v6h-6zM367,177h6v6h-6zM367,197h6v6h-6zM367,237h6v6h-6zM367,257h6v6h-6zM367,277h6v6h-6zM367,297h6v6h-6zM367,317h6v6h-6zM367,57h6v6h-6zM367,77h6v6h-6zM367,357h6v6h-6zM367,377h6v6h-6zM387,117h6v6h-6zM387,137h6v6h-6zM387,157h6v6h-6zM387,177h6v6h-6zM387,197h6v6h-6zM387,237h6v6h-6zM387,257h6v6h-6zM387,277h6v6h-6zM387,297h6v6h-6zM387,317h6v6h-6zM387,57h6v6h-6zM387,77h6v6h-6zM387,357h6v6h-6zM387,377h6v6h-6zM407,117h6v6h-6zM407,137h6v6h-6zM407,157h6v6h-6zM407,177h6v6h-6zM407,197h6v6h-6zM407,237h6v6h-6zM407,257h6v6h-6zM407,277h6v6h-6zM407,297h6v6h-6zM407,317h6v6h-6zM407,57h6v6h-6zM407,77h6v6h-6zM407,357h6v6h-6zM407,377h6v6h-6zM427,117h6v6h-6zM427,137h6v6h-6zM427,157h6v6h-6zM427,177h6v6h-6zM427,197h6v6h-6zM427,237h6v6h-6zM427,257h6v6h-6zM427,277h6v6h-6zM427,297h6v6h-6zM427,317h6v6h-6zM427,57h6v6h-6zM427,77h6v6h-6zM427,357h6v6h-6zM427,377h6v6h-6zM447,117h6v6h-6zM447,137h6v6h-6zM447,157h6v6h-6zM447,177h6v6h-6zM447,197h6v6h-6zM447,237h6v6h-6zM447,257h6v6h-6zM447,277h6v6h-6zM447,297h6v6h-6zM447,317h6v6h-6zM447,57h6v6h-6zM447,77h6v6h-6zM447,357h6v6h-6zM447,377h6v6h-6zM467,117h6v6h-6zM467,137h6v6h-6zM467,157h6v6h-6zM467,177h6v6h-6zM467,197h6v6h-6zM467,237h6v6h-6zM467,257h6v6h-6zM467,277h6v6h-6zM467,297h6v6h-6zM467,317h6v6h-6zM467,57h6v6h-6zM467,77h6v6h-6zM467,357h6v6h-6zM467,377h6v6h-6zM487,117h6v6h-6zM487,137h6v6h-6zM487,157h6v6h-6zM487,177h6v6h-6zM487,197h6v6h-6zM487,237h6v6h-6zM487,257h6v6h-6zM487,277h6v6h-6zM487,297h6v6h-6zM487,317h6v6h-6zM487,57h6v6h-6zM487,77h6v6h-6zM487,357h6v6h-6zM487,377h6v6h-6zM507,117h6v6h-6zM507,137h6v6h-6zM507,157h6v6h-6zM507,177h6v6h-6zM507,197h6v6h-6zM507,237h6v6h-6zM507,257h6v6h-6zM507,277h6v6h-6zM507,297h6v6h-6zM507,317h6v6h-6zM507,57h6v6h-6zM507,77h6v6h-6zM507,357h6v6h-6zM507,377h6v6h-6zM527,117h6v6h-6zM527,137h6v6h-6zM527,157h6v6h-6zM527,177h6v6h-6zM527,197h6v6h-6zM527,237h6v6h-6zM527,257h6v6h-6zM527,277h6v6h-6zM527,297h6v6h-6zM527,317h6v6h-6zM527,57h6v6h-6zM527,77h6v6h-6zM527,357h6v6h-6zM527,377h6v6h-6zM547,117h6v6h-6zM547,137h6v6h-6zM547,157h6v6h-6zM547,177h6v6h-6zM547,197h6v6h-6zM547,237h6v6h-6zM547,257h6v6h-6zM547,277h6v6h-6zM547,297h6v6h-6zM547,317h6v6h-6zM547,57h6v6h-6zM547,77h6v6h-6zM547,357h6v6h-6zM547,377h6v6h-6zM567,117h6v6h-6zM567,137h6v6h-6zM567,157h6v6h-6zM567,177h6v6h-6zM567,197h6v6h-6zM567,237h6v6h-6zM567,257h6v6h-6zM567,277h6v6h-6zM567,297h6v6h-6zM567,317h6v6h-6zM567,57h6v6h-6zM567,77h6v6h-6zM567,357h6v6h-6zM567,377h6v6h-6zM587,117h6v6h-6zM587,137h6v6h-6zM587,157h6v6h-6zM587,177h6v6h-6zM587,197h6v6h-6zM587,237h6v6h-6zM587,257h6v6h-6zM587,277h6v6h-6zM587,297h6v6h-6zM587,317h6v6h-6zM587,57h6v6h-6zM587,77h6v6h-6zM587,357h6v6h-6zM587,377h6v6h-6zM607,117h6v6h-6zM607,137h6v6h-6zM607,157h6v6h-6zM607,177h6v6h-6zM607,197h6v6h-6zM607,237h6v6h-6zM607,257h6v6h-6zM607,277h6v6h-6zM607,297h6v6h-6zM607,317h6v6h-6zM607,57h6v6h-6zM607,77h6v6h-6zM607,357h6v6h-6zM607,377h6v6h-6zM627,117h6v6h-6zM627,137h6v6h-6zM627,157h6v6h-6zM627,177h6v6h-6zM627,197h6v6h-6zM627,237h6v6h-6zM627,257h6v6h-6zM627,277h6v6h-6zM627,297h6v6h-6zM627,317h6v6h-6zM627,57h6v6h-6zM627,77h6v6h-6zM627,357h6v6h-6zM627,377h6v6h-6zM647,117h6v6h-6zM647,137h6v6h-6zM647,157h6v6h-6zM647,177h6v6h-6zM647,197h6v6h-6zM647,237h6v6h-6zM647,257h6v6h-6zM647,277h6v6h-6zM647,297h6v6h-6zM647,317h6v6h-6zM647,57h6v6h-6zM647,77h6v6h-6zM647,357h6v6h-6zM647,377h6v6h-6zM667,117h6v6h-6zM667,137h6v6h-6zM667,157h6v6h-6zM667,177h6v6h-6zM667,197h6v6h-6zM667,237h6v6h-6zM667,257h6v6h-6zM667,277h6v6h-6zM667,297h6v6h-6zM667,317h6v6h-6zM667,57h6v6h-6zM667,77h6v6h-6zM667,357h6v6h-6zM667,377h6v6h-6zM687,117h6v6h-6zM687,137h6v6h-6zM687,157h6v6h-6zM687,177h6v6h-6zM687,197h6v6h-6zM687,237h6v6h-6zM687,257h6v6h-6zM687,277h6v6h-6zM687,297h6v6h-6zM687,317h6v6h-6zM687,57h6v6h-6zM687,77h6v6h-6zM687,357h6v6h-6zM687,377h6v6h-6zM707,117h6v6h-6zM707,137h6v6h-6zM707,157h6v6h-6zM707,177h6v6h-6zM707,197h6v6h-6zM707,237h6v6h-6zM707,257h6v6h-6zM707,277h6v6h-6zM707,297h6v6h-6zM707,317h6v6h-6zM707,57h6v6h-6zM707,77h6v6h-6zM707,357h6v6h-6zM707,377h6v6h-6zM727,117h6v6h-6zM727,137h6v6h-6zM727,157h6v6h-6zM727,177h6v6h-6zM727,197h6v6h-6zM727,237h6v6h-6zM727,257h6v6h-6zM727,277h6v6h-6zM727,297h6v6h-6zM727,317h6v6h-6zM727,57h6v6h-6zM727,77h6v6h-6zM727,357h6v6h-6zM727,377h6v6h-6zM747,117h6v6h-6zM747,137h6v6h-6zM747,157h6v6h-6zM747,177h6v6h-6zM747,197h6v6h-6zM747,237h6v6h-6zM747,257h6v6h-6zM747,277h6v6h-6zM747,297h6v6h-6zM747,317h6v6h-6zM747,57h6v6h-6zM747,77h6v6h-6zM747,357h6v6h-6zM747,377h6v6h-6zM767,117h6v6h-6zM767,137h6v6h-6zM767,157h6v6h-6zM767,177h6v6h-6zM767,197h6v6h-6zM767,237h6v6h-6zM767,257h6v6h-6zM767,277h6v6h-6zM767,297h6v6h-6zM767,317h6v6h-6zM767,57h6v6h-6zM767,77h6v6h-6zM767,357h6v6h-6zM767,377h6v6h-6zM787,117h6v6h-6zM787,137h6v6h-6zM787,157h6v6h-6zM787,177h6v6h-6zM787,197h6v6h-6zM787,237h6v6h-6zM787,257h6v6h-6zM787,277h6v6h-6zM787,297h6v6h-6zM787,317h6v6h-6zM787,57h6v6h-6zM787,77h6v6h-6zM787,357h6v6h-6zM787,377h6v6h-6zM807,117h6v6h-6zM807,137h6v6h-6zM807,157h6v6h-6zM807,177h6v6h-6zM807,197h6v6h-6zM807,237h6v6h-6zM807,257h6v6h-6zM807,277h6v6h-6zM807,297h6v6h-6zM807,317h6v6h-6zM807,57h6v6h-6zM807,77h6v6h-6zM807,357h6v6h-6zM807,377h6v6h-6zM827,117h6v6h-6zM827,137h6v6h-6zM827,157h6v6h-6zM827,177h6v6h-6zM827,197h6v6h-6zM827,237h6v6h-6zM827,257h6v6h-6zM827,277h6v6h-6zM827,297h6v6h-6zM827,317h6v6h-6zM827,57h6v6h-6zM827,77h6v6h-6zM827,357h6v6h-6zM827,377h6v6h-6zM847,117h6v6h-6zM847,137h6v6h-6zM847,157h6v6h-6zM847,177h6v6h-6zM847,197h6v6h-6zM847,237h6v6h-6zM847,257h6v6h-6zM847,277h6v6h-6zM847,297h6v6h-6zM847,317h6v6h-6zM847,57h6v6h-6zM847,77h6v6h-6zM847,357h6v6h-6zM847,377h6v6h-6zM867,117h6v6h-6zM867,137h6v6h-6zM867,157h6v6h-6zM867,177h6v6h-6zM867,197h6v6h-6zM867,237h6v6h-6zM867,257h6v6h-6zM867,277h6v6h-6zM867,297h6v6h-6zM867,317h6v6h-6zM867,57h6v6h-6zM867,77h6v6h-6zM867,357h6v6h-6zM867,377h6v6h-6z"/>
+<text class="bb-idx" x="276" y="124" text-anchor="middle">a</text>
+<text class="bb-idx" x="276" y="144" text-anchor="middle">b</text>
+<text class="bb-idx" x="276" y="164" text-anchor="middle">c</text>
+<text class="bb-idx" x="276" y="184" text-anchor="middle">d</text>
+<text class="bb-idx" x="276" y="204" text-anchor="middle">e</text>
+<text class="bb-idx" x="276" y="244" text-anchor="middle">f</text>
+<text class="bb-idx" x="276" y="264" text-anchor="middle">g</text>
+<text class="bb-idx" x="276" y="284" text-anchor="middle">h</text>
+<text class="bb-idx" x="276" y="304" text-anchor="middle">i</text>
+<text class="bb-idx" x="276" y="324" text-anchor="middle">j</text>
+<text class="bb-idx" x="290" y="106" text-anchor="middle">1</text>
+<text class="bb-idx" x="290" y="342" text-anchor="middle">1</text>
+<text class="bb-idx" x="370" y="106" text-anchor="middle">5</text>
+<text class="bb-idx" x="370" y="342" text-anchor="middle">5</text>
+<text class="bb-idx" x="470" y="106" text-anchor="middle">10</text>
+<text class="bb-idx" x="470" y="342" text-anchor="middle">10</text>
+<text class="bb-idx" x="570" y="106" text-anchor="middle">15</text>
+<text class="bb-idx" x="570" y="342" text-anchor="middle">15</text>
+<text class="bb-idx" x="670" y="106" text-anchor="middle">20</text>
+<text class="bb-idx" x="670" y="342" text-anchor="middle">20</text>
+<text class="bb-idx" x="770" y="106" text-anchor="middle">25</text>
+<text class="bb-idx" x="770" y="342" text-anchor="middle">25</text>
+<text class="bb-idx" x="870" y="106" text-anchor="middle">30</text>
+<text class="bb-idx" x="870" y="342" text-anchor="middle">30</text>
+<rect class="box" x="930" y="30" width="170" height="110" rx="6"/>
+<text class="t-name" x="1015" y="92" text-anchor="middle">TP4056</text>
+<text x="938" y="59">OUT+</text><text x="938" y="89">OUT−</text>
+<text x="975" y="132" text-anchor="middle">B+</text><text x="1055" y="132" text-anchor="middle">B−</text>
+<text class="t-mut" x="1015" y="20" text-anchor="middle">IN+ / IN− ← LM2596 at 5.0 V</text>
+<line class="bb-wire bb-w-pos" x1="975" y1="140" x2="975" y2="200"/>
+<line class="bb-wire bb-w-neg" x1="1055" y1="140" x2="1055" y2="200"/>
+<rect class="box" x="945" y="200" width="140" height="52" rx="10"/>
+<text class="t-name" x="1015" y="226" text-anchor="middle">18650</text>
+<text class="t-mut" x="1015" y="243" text-anchor="middle">3.0–4.2 V</text>
+<path class="bb-wire bb-w-pos" d="M930,55 C905,55 885,60 870,60"/>
+<circle class="bb-pin" cx="930" cy="55" r="3.2"/>
+<circle class="bb-pin" cx="870" cy="60" r="3.2"/>
+<path class="bb-wire bb-w-neg" d="M930,85 C900,85 870,80 850,80"/>
+<circle class="bb-pin" cx="930" cy="85" r="3.2"/>
+<circle class="bb-pin" cx="850" cy="80" r="3.2"/>
+<rect class="box" x="30" y="70" width="150" height="120" rx="6"/>
+<circle class="bb-dome" cx="88" cy="130" r="30"/>
+<text class="t-name" x="88" y="215" text-anchor="middle">AM312</text>
+<text class="t-mut" x="88" y="231" text-anchor="middle">on 3 jumper wires</text>
+<text x="172" y="99" text-anchor="end">VCC</text>
+<text x="172" y="134" text-anchor="end">GND</text>
+<text x="172" y="169" text-anchor="end">OUT</text>
+<path class="bb-wire bb-w-pos" d="M180,95 C230,95 260,62 290,60"/>
+<circle class="bb-pin" cx="180" cy="95" r="3.2"/>
+<circle class="bb-pin" cx="290" cy="60" r="3.2"/>
+<path class="bb-wire bb-w-neg" d="M180,130 C240,130 300,95 330,80"/>
+<circle class="bb-pin" cx="180" cy="130" r="3.2"/>
+<circle class="bb-pin" cx="330" cy="80" r="3.2"/>
+<path class="bb-wire bb-w-sig" d="M180,165 C240,165 300,160 330,160"/>
+<circle class="bb-pin" cx="180" cy="165" r="3.2"/>
+<circle class="bb-pin" cx="330" cy="160" r="3.2"/>
+<line class="bb-leg" x1="330" y1="180" x2="410" y2="180"/>
+<g transform="translate(370,180)"><rect x="-13" y="-5" width="26" height="10" rx="2" fill="#232326"/><rect x="7" y="-5" width="3" height="10" fill="#cfcfcf"/></g>
+<circle class="bb-pin" cx="330" cy="180" r="2.6"/>
+<circle class="bb-pin" cx="410" cy="180" r="2.6"/>
+<line class="bb-leg" x1="410" y1="160" x2="490" y2="160"/>
+<g transform="translate(450.0,160.0) rotate(0.0)"><rect class="bb-res" x="-18" y="-6" width="36" height="12" rx="5"/><rect x="-11" y="-6" width="3" height="12" fill="#7a4a22"/><rect x="-5" y="-6" width="3" height="12" fill="#1b1b1b"/><rect x="1" y="-6" width="3" height="12" fill="#d23a2a"/><rect x="10" y="-6" width="3" height="12" fill="#c9a13b"/></g>
+<circle class="bb-pin" cx="410" cy="160" r="2.6"/>
+<circle class="bb-pin" cx="490" cy="160" r="2.6"/>
+<line class="bb-leg" x1="490" y1="80" x2="490" y2="120"/>
+<circle cx="490" cy="100" r="11" fill="#27407a"/>
+<path d="M479.8,96 A11,11 0 0 1 500.2,96 Z" fill="#c9cdd6"/>
+<text class="bb-qt" x="490" y="94" text-anchor="middle" style="fill:#27407a">−</text>
+<circle class="bb-pin" cx="490" cy="80" r="2.6"/>
+<circle class="bb-pin" cx="490" cy="120" r="2.6"/>
+<line class="bb-leg" x1="490" y1="140" x2="430" y2="80"/>
+<g transform="translate(460.0,110.0) rotate(-135.0)"><rect class="bb-res" x="-18" y="-6" width="36" height="12" rx="5"/><rect x="-11" y="-6" width="3" height="12" fill="#7a4a22"/><rect x="-5" y="-6" width="3" height="12" fill="#1b1b1b"/><rect x="1" y="-6" width="3" height="12" fill="#2f9a4a"/><rect x="10" y="-6" width="3" height="12" fill="#c9a13b"/></g>
+<circle class="bb-pin" cx="490" cy="140" r="2.6"/>
+<circle class="bb-pin" cx="430" cy="80" r="2.6"/>
+<line class="bb-leg" x1="490" y1="200" x2="490" y2="206"/>
+<line class="bb-leg" x1="510" y1="200" x2="510" y2="206"/>
+<line class="bb-leg" x1="530" y1="200" x2="530" y2="206"/>
+<rect x="480" y="203" width="60" height="4" fill="#b9bdc4"/>
+<rect class="bb-q" x="480" y="207" width="60" height="13" rx="1"/>
+<text class="bb-qt" x="490" y="217" text-anchor="middle">G</text>
+<text class="bb-qt" x="510" y="217" text-anchor="middle">D</text>
+<text class="bb-qt" x="530" y="217" text-anchor="middle">S</text>
+<circle class="bb-pin" cx="490" cy="200" r="2.6"/>
+<circle class="bb-pin" cx="510" cy="200" r="2.6"/>
+<circle class="bb-pin" cx="530" cy="200" r="2.6"/>
+<path class="bb-wire bb-w-neg" d="M530,160 L530,80"/>
+<circle class="bb-pin" cx="530" cy="160" r="3.2"/>
+<circle class="bb-pin" cx="530" cy="80" r="3.2"/>
+<line class="bb-leg" x1="510" y1="180" x2="531" y2="185"/>
+<line class="bb-leg" x1="570" y1="180" x2="549" y2="185"/>
+<circle class="bb-led" cx="540" cy="178" r="11"/>
+<path class="bb-leg" d="M529,182 L551,182" style="stroke-width:1.2"/>
+<circle class="bb-pin" cx="510" cy="180" r="2.6"/>
+<circle class="bb-pin" cx="570" cy="180" r="2.6"/>
+<line class="bb-leg" x1="570" y1="160" x2="650" y2="160"/>
+<g transform="translate(610.0,160.0) rotate(0.0)"><rect class="bb-res" x="-18" y="-6" width="36" height="12" rx="5"/><rect x="-11" y="-6" width="3" height="12" fill="#2f63d6"/><rect x="-5" y="-6" width="3" height="12" fill="#9a9a9a"/><rect x="1" y="-6" width="3" height="12" fill="#1b1b1b"/><rect x="10" y="-6" width="3" height="12" fill="#c9a13b"/></g>
+<circle class="bb-pin" cx="570" cy="160" r="2.6"/>
+<circle class="bb-pin" cx="650" cy="160" r="2.6"/>
+<path class="bb-wire bb-w-pos" d="M650,120 L650,60"/>
+<circle class="bb-pin" cx="650" cy="120" r="3.2"/>
+<circle class="bb-pin" cx="650" cy="60" r="3.2"/>
+<line class="bb-lead" x1="370" y1="186" x2="300" y2="250"/>
+<text class="bb-cap" x="300" y="262" text-anchor="start">D2 1N4148</text>
+<text class="bb-capm" x="300" y="277" text-anchor="start">stripe → col 7</text>
+<line class="bb-lead" x1="450" y1="166" x2="430" y2="288"/>
+<text class="bb-cap" x="430" y="300" text-anchor="middle">R2 1 kΩ</text>
+<text class="bb-capm" x="430" y="315" text-anchor="middle">brown·black·red</text>
+<line class="bb-lead" x1="515" y1="221" x2="530" y2="250"/>
+<text class="bb-cap" x="530" y="262" text-anchor="start">Q1 IRLZ44N</text>
+<text class="bb-capm" x="530" y="277" text-anchor="start">G D S, text facing you</text>
+<line class="bb-lead" x1="548" y1="189" x2="575" y2="288"/>
+<text class="bb-cap" x="575" y="300" text-anchor="start">LED</text>
+<text class="bb-capm" x="575" y="315" text-anchor="start">short leg → col 12</text>
+<line class="bb-lead" x1="630" y1="166" x2="745" y2="250"/>
+<text class="bb-cap" x="745" y="262" text-anchor="start">R1 68 Ω</text>
+<text class="bb-capm" x="745" y="277" text-anchor="start">blue·gray·black</text>
+<line class="bb-lead-out" x1="455" y1="104" x2="400" y2="26"/>
+<text x="396" y="22" text-anchor="end">R3 1 MΩ (brown·black·green) → − rail</text>
+<line class="bb-lead-out" x1="498" y1="91" x2="560" y2="26"/>
+<text x="564" y="22">C1 100 µF · striped (−) leg → − rail</text>
+
+      </svg>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1075 560" role="img" aria-label="Schematic: source to LM2596 set to 5 volts, to TP4056 input; B+ and B- to the 18650 cell. OUT+ rail feeds the AM312 PIR VCC and, through R1 68 ohm, the LED anode. The LED cathode goes to the drain of an IRLZ44N MOSFET whose source is on the OUT- ground rail. The PIR output charges C1 100 microfarad through diode D2 and R2 1k; the capacitor node drives the MOSFET gate and drains slowly through R3 1 megohm, holding the LED on for about 40 seconds.">
+<style>
+svg { color: #17191a; font-family: "IBM Plex Mono", Menlo, Consolas, monospace; }
+.w { stroke: currentColor; stroke-width: 2; fill: none; }
+.p { stroke: #c2382b; stroke-width: 2.5; fill: none; }
+.s { stroke: #0e7a70; stroke-width: 2.5; fill: none; }
+.box { fill: #f4f5f2; stroke: currentColor; stroke-width: 1.5; }
+.res { fill: #ffffff; stroke: currentColor; stroke-width: 1.8; }
+.dot { fill: currentColor; }
+.dotp { fill: #c2382b; }
+text { fill: currentColor; font-size: 12px; }
+.t-name { font-family: Archivo, "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 15px; }
+.t-mut { fill: #5b625e; font-size: 11px; }
+.t-pos { fill: #c2382b; font-weight: 500; }
+.t-sig { fill: #0e7a70; font-weight: 500; }
+.fillink { fill: currentColor; }
+</style>
+<rect x="0" y="0" width="1075" height="560" fill="#ffffff"/>
+
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" class="fillink"/>
+          </marker>
+        </defs>
+
+        <!-- ===== Charging side ===== -->
+        <!-- Source -->
+        <rect class="box" x="20" y="55" width="120" height="100" rx="6"/>
+        <text class="t-name" x="80" y="92" text-anchor="middle">Source</text>
+        <text class="t-mut" x="80" y="112" text-anchor="middle">solar / adapter</text>
+        <text class="t-mut" x="80" y="128" text-anchor="middle">7–24 V</text>
+        <line class="p" x1="140" y1="85" x2="200" y2="85"/>
+        <line class="w" x1="140" y1="125" x2="200" y2="125"/>
+
+        <!-- LM2596 -->
+        <rect class="box" x="200" y="55" width="150" height="100" rx="6"/>
+        <text class="t-name" x="275" y="110" text-anchor="middle">LM2596</text>
+        <text class="t-mut" x="275" y="147" text-anchor="middle">buck, trim to 5.0 V</text>
+        <text x="207" y="89">IN+</text><text x="207" y="129">IN−</text>
+        <text x="343" y="89" text-anchor="end">OUT+</text><text x="343" y="129" text-anchor="end">OUT−</text>
+        <line class="p" x1="350" y1="85" x2="410" y2="85"/>
+        <line class="w" x1="350" y1="125" x2="410" y2="125"/>
+        <text class="t-pos" x="380" y="76" text-anchor="middle">5.0 V</text>
+
+        <!-- TP4056 -->
+        <rect class="box" x="410" y="55" width="170" height="145" rx="6"/>
+        <text class="t-name" x="495" y="110" text-anchor="middle">TP4056</text>
+        <text class="t-mut" x="495" y="165" text-anchor="middle">+ DW01 protection</text>
+        <text x="417" y="89">IN+</text><text x="417" y="129">IN−</text>
+        <text x="573" y="89" text-anchor="end">OUT+</text><text x="573" y="129" text-anchor="end">OUT−</text>
+        <text x="450" y="192" text-anchor="middle">B+</text><text x="540" y="192" text-anchor="middle">B−</text>
+
+        <!-- Battery -->
+        <line class="p" x1="450" y1="200" x2="450" y2="250"/>
+        <line class="w" x1="540" y1="200" x2="540" y2="250"/>
+        <rect class="box" x="425" y="250" width="140" height="56" rx="10"/>
+        <text class="t-pos" x="440" y="283">+</text>
+        <text x="545" y="283">−</text>
+        <text class="t-name" x="495" y="276" text-anchor="middle">18650</text>
+        <text class="t-mut" x="495" y="294" text-anchor="middle">3.0–4.2 V</text>
+
+        <!-- ===== Rails ===== -->
+        <line class="p" x1="580" y1="85" x2="980" y2="85"/>
+        <text class="t-pos" x="600" y="74">OUT+ rail · 3.0–4.2 V</text>
+        <polyline class="w" points="580,125 610,125 610,500 980,500"/>
+        <text x="620" y="522">OUT− rail (protected ground)</text>
+
+        <!-- ===== AM312 PIR ===== -->
+        <line class="p" x1="700" y1="85" x2="700" y2="220"/>
+        <circle class="dotp" cx="700" cy="85" r="4"/>
+        <rect class="box" x="650" y="220" width="130" height="110" rx="6"/>
+        <text class="t-name" x="715" y="268" text-anchor="middle">AM312</text>
+        <text class="t-mut" x="715" y="286" text-anchor="middle">PIR sensor</text>
+        <text x="706" y="238">VCC</text>
+        <text x="706" y="322">GND</text>
+        <text x="773" y="302" text-anchor="end">OUT</text>
+        <line class="w" x1="700" y1="330" x2="700" y2="500"/>
+        <circle class="dot" cx="700" cy="500" r="4"/>
+
+        <!-- Trigger path: OUT → D2 → R2 → gate node -->
+        <line class="s" x1="780" y1="280" x2="790" y2="280"/>
+        <polygon points="790,268 790,292 811,280" class="res"/>
+        <line class="w" x1="811" y1="268" x2="811" y2="292"/>
+        <text x="800" y="258" text-anchor="middle">D2</text>
+        <line class="s" x1="811" y1="280" x2="822" y2="280"/>
+        <rect class="res" x="822" y="272" width="40" height="16" rx="2"/>
+        <text x="844" y="258" text-anchor="middle">R2 1 kΩ</text>
+        <line class="s" x1="862" y1="280" x2="958" y2="280"/>
+        <circle class="dot" cx="878" cy="280" r="4"/>
+        <circle class="dot" cx="908" cy="280" r="4"/>
+        <text class="t-sig" x="790" y="318">3.3 V pulse</text>
+
+        <!-- C1 timing capacitor -->
+        <line class="w" x1="878" y1="280" x2="878" y2="362"/>
+        <line class="w" x1="864" y1="362" x2="892" y2="362" style="stroke-width:2.5"/>
+        <path class="w" d="M864,375 Q878,366 892,375" style="stroke-width:2.5"/>
+        <text class="t-mut" x="858" y="358" text-anchor="end">+</text>
+        <line class="w" x1="878" y1="371" x2="878" y2="500"/>
+        <text x="870" y="404" text-anchor="end">C1 100 µF</text>
+        <circle class="dot" cx="878" cy="500" r="4"/>
+
+        <!-- R3 bleed: sets the on-time -->
+        <line class="w" x1="908" y1="280" x2="908" y2="370"/>
+        <rect class="res" x="900" y="370" width="16" height="44" rx="2"/>
+        <text x="922" y="390">R3</text>
+        <text x="922" y="406">1 MΩ</text>
+        <line class="w" x1="908" y1="414" x2="908" y2="500"/>
+        <circle class="dot" cx="908" cy="500" r="4"/>
+
+        <!-- LED branch -->
+        <line class="p" x1="980" y1="85" x2="980" y2="110"/>
+        <rect class="res" x="972" y="110" width="16" height="44" rx="2"/>
+        <text x="962" y="137" text-anchor="end">R1 68 Ω</text>
+        <line class="w" x1="980" y1="154" x2="980" y2="180"/>
+        <polygon points="965,180 995,180 980,208" class="res"/>
+        <line class="w" x1="965" y1="208" x2="995" y2="208"/>
+        <line class="w" x1="998" y1="186" x2="1014" y2="176" marker-end="url(#arr)"/>
+        <line class="w" x1="1000" y1="198" x2="1016" y2="188" marker-end="url(#arr)"/>
+        <text x="958" y="198" text-anchor="end">D1 white LED</text>
+        <line class="w" x1="980" y1="208" x2="980" y2="264"/>
+
+        <!-- Q1 N-channel MOSFET -->
+        <circle cx="970" cy="280" r="27" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <line class="w" x1="958" y1="264" x2="958" y2="296" style="stroke-width:2.5"/>
+        <line class="w" x1="966" y1="260" x2="966" y2="270" style="stroke-width:2.5"/>
+        <line class="w" x1="966" y1="275" x2="966" y2="285" style="stroke-width:2.5"/>
+        <line class="w" x1="966" y1="290" x2="966" y2="300" style="stroke-width:2.5"/>
+        <line class="w" x1="966" y1="264" x2="980" y2="264"/>
+        <line class="w" x1="980" y1="280" x2="968" y2="280" marker-end="url(#arr)"/>
+        <polyline class="w" points="966,296 980,296 980,280"/>
+        <line class="w" x1="980" y1="296" x2="980" y2="500"/>
+        <text class="t-mut" x="952" y="272" text-anchor="end">G</text>
+        <text class="t-mut" x="986" y="252">D</text>
+        <text class="t-mut" x="986" y="322">S</text>
+        <text class="t-name" x="1006" y="276">Q1</text>
+        <text x="1006" y="294">IRLZ44N</text>
+      </svg>
