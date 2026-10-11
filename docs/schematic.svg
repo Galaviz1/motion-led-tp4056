@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1330 520" role="img" aria-label="Schematic rev 6: source to LM2596 set to 5 V to TP4056, 18650 on B+ and B-. TP4056 OUT+ and OUT- go to perfboard terminal J1. On the perfboard, BAT+ feeds the AM312 and terminal J2 plus; AM312 OUT charges C1 100 microfarad through D2 1N4148 and R2 1 kilohm, R3 1 megohm discharges it, and the capacitor node drives the gate of Q1 IRLZ44N. Q1 source to GND, drain to J2 minus. J2 feeds a 5 V 2 A boost module, whose output drives two 5 V 3 W COB bars in parallel.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1330 520" role="img" aria-label="Schematic rev 7: source to LM2596 set to 5 V to TP4056, 18650 on B+ and B-. TP4056 OUT+ and OUT- go to perfboard terminal J1. On the perfboard, BAT+ feeds the AM312 and terminal J2 plus; AM312 OUT charges C1 220 microfarad through D2 1N4148 and R2 1 kilohm, R3 1 megohm discharges it, and the capacitor node drives the gate of Q1 IRLZ44N. Q1 source to GND, drain to J2 minus. J2 feeds a 5 V 2 A boost module, whose output drives two 5 V 3 W COB bars in parallel.">
 <style>
 svg{font-family:"IBM Plex Mono",Menlo,Consolas,monospace}
 text{fill:#17191a;font-size:12px}
@@ -60,7 +60,7 @@ text{fill:#17191a;font-size:12px}
 <line x1="778" y1="318" x2="806" y2="318" stroke="#17191a" stroke-width="2.5"/><path d="M778,331 Q792,323 806,331" fill="none" stroke="#17191a" stroke-width="2.5"/>
 <path class="w" stroke="#202020" d="M792,328 L792,455"/>
 <circle cx="792" cy="455" r="3.8" fill="#202020"/>
-<text x="770" y="332" text-anchor="end">C1 100 µF</text><text class="m" x="783" y="312" text-anchor="end">+</text>
+<text x="770" y="332" text-anchor="end">C1 220 µF</text><text class="m" x="783" y="312" text-anchor="end">+</text>
 <path class="w" stroke="#7b3fbf" d="M814,240 L814,370"/>
 <rect x="806" y="370" width="16" height="44" rx="2" fill="#fff" stroke="#17191a" stroke-width="1.8"/>
 <text x="828" y="396.0" text-anchor="start"></text>

@@ -103,7 +103,7 @@ text{fill:#17191a;font-size:12px}
 <circle cx="292.5" cy="193" r="13" fill="#27407a"/><path d="M279.5,193 A13,13 0 0 1 288.5,180.6 L288.5,205.4 A13,13 0 0 1 279.5,193 Z" fill="#c9cdd6"/>
 <circle cx="301" cy="193" r="2.6" fill="#555"/>
 <circle cx="284" cy="193" r="2.6" fill="#555"/>
-<text class="pl" x="292.5" y="221" text-anchor="middle">C1 100 µF</text>
+<text class="pl" x="292.5" y="221" text-anchor="middle">C1 220 µF</text>
 <text class="pt" x="268" y="197" text-anchor="end">−</text>
 <rect x="341" y="203" width="56" height="6" fill="#b9bdc4"/>
 <rect x="341" y="209" width="56" height="12" rx="1" fill="#26262a"/>
